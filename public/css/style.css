@@ -14,9 +14,9 @@
 
     body {
 
-        color: #b3b3b3;
+        color: #000000;
 
-        background: #eeeeee;
+        background: #fbfbfb;
 
         font-family: 'Lato', sans-serif;
 
@@ -29,12 +29,12 @@
     }
     h1,h2,h3,h4,h5{
 
-        font-weight: 300;
+        font-weight: 400;
 
     }
 
     .btn-custom {
-        background-color: #106894;
+        background-color: #f4f5f6;
         border: none;
         width: 100px;
         height: 30px;
@@ -97,6 +97,7 @@
         width: 100%;
 
         height: 100%;
+       
 
     }
 
@@ -144,7 +145,7 @@
 
     .login-body {
 
-        background-color: #f1f2f7;
+        background-color: #9d0b51;
 
     }
 
@@ -190,7 +191,11 @@
 
     }
 
-
+/* .container-form{
+    max-height: none;
+    background-image: url('https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg');
+    background-size: 100%;
+} */
 
     .login-form {
 
@@ -198,7 +203,8 @@
 
         margin: 200px auto 0;
 
-        background: #d5d7de;
+        background: #b2e8ef;
+        border-radius: 6%;
 
     }
 
@@ -306,9 +312,9 @@
 
     .login-form .login-img{
 
-        font-size: 50px;
+        font-size: 60px;
 
-        font-weight: 300;
+        font-weight: 500;
 
     }
 
@@ -336,7 +342,7 @@
 
         border: none;
 
-        border-radius: 0;
+        border-radius: 4;
 
     }
 
@@ -348,13 +354,13 @@
 
         font-size: 16px;
 
-        border-radius: 0;
+        border-radius: 4;
 
     }
 
     .login-form .btn{
 
-        border-radius: 0;
+        border-radius: 6;
 
     }
 
@@ -382,7 +388,7 @@
 
         text-align: center;
 
-        color: #b6b6b6;
+        color: #f0993b;
 
         font-size: 16px;
 
@@ -526,7 +532,8 @@
 
         position: fixed;
 
-        background: #4e73df;
+      
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,83,121,1) 35%, rgb(67, 151, 235) 100%);
 
     }
 
@@ -727,7 +734,8 @@
 
     ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 
-        background: #4e73df;
+       
+        background: linear-gradient(90deg, rgb(178, 174, 245) 0%, rgb(138, 199, 242) 35%, rgb(67, 151, 235) 100%);
 
         color: #fff;
 
@@ -1061,17 +1069,18 @@
 
     a.logo {
 
-        font-size: 22px;
+        font-size: 26px;
 
-        font-weight: 300;
+        font-weight: 600;
 
-        color: #fff;
+        color: #e8ec3a;
 
         float: left;
 
         margin-top: 15px;
 
-        text-transform: uppercase;
+        text-transform: capitalize;
+        text-shadow: 2px 2px #e9d9d9;
 
     }
 
@@ -1139,7 +1148,7 @@
 
         color: #fed189;
 
-        font-size: 18px;
+        font-size: 24px;
 
         padding: 2px 6px;
 
@@ -1609,7 +1618,7 @@
 
     .dropdown-menu.extended.logout > li > a {
 
-        border-bottom: 1px solid #EBEBEB !important;
+        border-bottom: 1px solid #184ee4 !important;
 
         font-size: 14px;
 
@@ -1665,9 +1674,9 @@
 
     .top-nav .username {
 
-        font-size: 13px;
+        font-size: 24px;
 
-        color: #bdbdbd;
+        color: #a3efbb;
 
     }
 
@@ -1693,7 +1702,7 @@
 
     .top-nav ul.top-menu > li > a:hover, .top-nav ul.top-menu > li > a:focus {
 
-        background: #F1F2F7;
+        background: #000000;
 
 
 
@@ -2089,9 +2098,8 @@
 
     color : #fff;
 
-    background : #1a2732;
-
-    background-color : #328ad5;
+ 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,83,121,1) 35%, rgb(67, 151, 235) 100%);
 
     }
 
