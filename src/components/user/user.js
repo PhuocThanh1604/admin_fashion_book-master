@@ -16,6 +16,7 @@ class User extends Component {
       currType: "add",
       is_admin: false,
       pagination: [],
+      createModal:false,
     };
   }
   componentWillMount() {
@@ -450,6 +451,7 @@ class User extends Component {
           <div className="col-lg-12">
             <section className="panel">
               <header className="panel-heading">Advanced Table</header>
+              <button className="add-button" onClick={() => this.setState({createModal:true})}>Add user</button>
               <table className="table table-striped table-advance table-hover">
                 <tbody>
                   <tr>
@@ -488,7 +490,9 @@ class User extends Component {
                           <td>
                             <div className="btn-group">
                               <a
-                                onClick={() =>
+                                onClick={() =>{
+                                  console.log("haha");
+                                  this.setState({createModal:true});
                                   this.setState({
                                     email: element.email,
                                     firstName: element.firstName,
@@ -499,6 +503,7 @@ class User extends Component {
                                     is_admin: element.is_admin,
                                     currType: "update"
                                   })
+                                }
                                 }
                                 className="btn btn-success"
                               >
@@ -528,7 +533,7 @@ class User extends Component {
                         <td>
                           <div className="btn-group">
                             <a
-                              onClick={() =>
+                              onClick={() =>{ this.setState({createModal:true});
                                 this.setState({
                                   email: element.email,
                                   firstName: element.firstName,
@@ -538,7 +543,7 @@ class User extends Component {
                                   password: element.phone_number,
                                   is_admin: element.is_admin,
                                   currType: "update"
-                                })
+                                })}
                               }
                               className="btn btn-success"
                             >
@@ -564,7 +569,9 @@ class User extends Component {
             </section>
           </div>
         </div>
-        <div className="row">
+        {this.state.createModal && 
+        <div id="myModal" class="modal" onClick={() => this.setState({createModal:false})}>
+        <div className="row modal-content" onClick={(e) => e.stopPropagation()}>
           <div className="col-lg-12">
             <section className="panel">
               <header className="panel-heading">Form validations</header>
@@ -691,6 +698,8 @@ class User extends Component {
             </section>
           </div>
         </div>
+        </div>
+  }
       </section>
     );
   }
